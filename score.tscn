@@ -1,0 +1,111 @@
+[gd_scene load_steps=3 format=3 uid="uid://c04dsyjfc4dv8"]
+
+[ext_resource type="PackedScene" uid="uid://da4rnxax17isg" path="res://score_egg.tscn" id="1_4bay0"]
+[ext_resource type="Script" path="res://score.gd" id="1_a4rt2"]
+
+[node name="Score" type="Node2D"]
+script = ExtResource("1_a4rt2")
+
+[node name="Layer" type="CanvasLayer" parent="."]
+layer = 5
+
+[node name="GridContainer" type="GridContainer" parent="Layer"]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.05
+anchor_right = 0.05
+anchor_bottom = 0.05
+offset_right = 56.0
+offset_bottom = 206.0
+columns = 3
+
+[node name="egg" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg2" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg3" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg4" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg5" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg6" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg7" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg8" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg9" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg10" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg11" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg12" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg13" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg14" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg15" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg16" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg17" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg18" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg19" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg20" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg21" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg22" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg23" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg24" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg25" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg26" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg27" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg28" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg29" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2
+
+[node name="egg30" parent="Layer/GridContainer" instance=ExtResource("1_4bay0")]
+layout_mode = 2

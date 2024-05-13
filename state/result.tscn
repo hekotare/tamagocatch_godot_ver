@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://cp77lw8c0xqe2"]
+
+[ext_resource type="Script" path="res://state/result.gd" id="1_cfxjr"]
+[ext_resource type="AudioStream" uid="uid://2i6i7q6gnalu" path="res://sound/mini_fanfare.ogg" id="2_uebum"]
+[ext_resource type="PackedScene" uid="uid://dp5204ljnd8qe" path="res://score_label.tscn" id="3_kde2t"]
+
+[node name="Result" type="Node2D"]
+script = ExtResource("1_cfxjr")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 4
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.501961)
+
+[node name="Label" parent="CanvasLayer" instance=ExtResource("3_kde2t")]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.25
+anchor_right = 0.5
+anchor_bottom = 0.25
+offset_left = -86.5
+offset_top = -44.0
+offset_right = 86.5
+offset_bottom = 44.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "3030"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_uebum")

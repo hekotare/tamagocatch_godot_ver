@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://da4rnxax17isg"]
+
+[ext_resource type="Texture2D" uid="uid://sugcu2sw1rjp" path="res://image/score.png" id="1_hl3sr"]
+
+[node name="Control" type="Control"]
+custom_minimum_size = Vector2(16, 17)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 16.0
+offset_bottom = 17.0
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_hl3sr")
+centered = false
+hframes = 2

@@ -1,0 +1,59 @@
+[gd_scene load_steps=6 format=3 uid="uid://cavhrvf4nnywx"]
+
+[ext_resource type="Script" path="res://state/maingame.gd" id="1_8lo7c"]
+[ext_resource type="AudioStream" uid="uid://co4tv7l0gmdc5" path="res://sound/Isogriv.ogg" id="2_qjxvb"]
+
+[sub_resource type="Curve2D" id="Curve2D_gf13b"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 536, 358.208, 34.3265, 2.11949, -34.3265, -2.11949, 378, 305.105, 35.4407, -24.0469, -35.4407, 24.0469, 257, 333.105, 0, 0, 0, 0, 210, 383.312)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_c6qp1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 538, 352, 25.7328, 19.1173, -25.7328, -19.1173, 431, 255, 47.3993, -47.9524, -47.3993, 47.9524, 287, 245, 0, 0, 0, 0, 209, 384)
+}
+point_count = 4
+
+[sub_resource type="Curve2D" id="Curve2D_ul7x5"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 224, 392, 0, 0, 0, 0, 182, 365, 48.1101, 1.70039, -48.1101, -1.70039, 119, 345, 0, 0, 0, 0, 52, 374)
+}
+point_count = 4
+
+[node name="MainGame" type="Node2D"]
+script = ExtResource("1_8lo7c")
+
+[node name="Path" type="Path2D" parent="."]
+position = Vector2(-16, -124)
+scale = Vector2(1, 1.03571)
+curve = SubResource("Curve2D_gf13b")
+
+[node name="PathFollow" type="PathFollow2D" parent="Path"]
+position = Vector2(210, 383.312)
+rotation = 2.32322
+progress = 761.484
+
+[node name="Path2" type="Path2D" parent="."]
+position = Vector2(-17, -109)
+curve = SubResource("Curve2D_c6qp1")
+
+[node name="PathFollow2" type="PathFollow2D" parent="Path2"]
+position = Vector2(538, 352)
+rotation = -2.40517
+
+[node name="OutPath" type="Path2D" parent="."]
+position = Vector2(-42, -126)
+curve = SubResource("Curve2D_ul7x5")
+
+[node name="OutPathFollow" type="PathFollow2D" parent="OutPath"]
+unique_name_in_owner = true
+position = Vector2(224, 392)
+rotation = -2.57026
+
+[node name="ProjectileList" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_qjxvb")
+volume_db = -20.0
